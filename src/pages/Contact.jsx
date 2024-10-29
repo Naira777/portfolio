@@ -45,7 +45,7 @@ const handleSubmit = (e) => {
         message: form.message
 
       },
-      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+      import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY || 'BIX9JGKwAECAk2FHB',
 
      ).then(() => {
       setIsLoading(false)
